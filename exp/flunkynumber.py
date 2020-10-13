@@ -28,7 +28,7 @@ def flunky(i):
         print(i,"is a funky numer @@@@@@########@@@@")
         counter_count.append(i)
         
-for i in range(1,50):
+for i in range(1,10000):
     flunky(i)
     # print("Number of flunky number is", counts)
     print("Numbers are", counter_count)
