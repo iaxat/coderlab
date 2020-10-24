@@ -3,8 +3,9 @@ def descending_order():
     lst = list(str(n))
     print('The number is: ', lst)
     
-    list.sort()
+    lst_new = lst.sort()
     
+    print(lst_new)
     
 
 
