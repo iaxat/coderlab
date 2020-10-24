@@ -1,5 +1,7 @@
 def descending_order():
-    n = (input('Enter the number: ')).split()
+    n = int(input('Enter the number: '))
+    lst = []
+    lst.append(n.split(""))
     print('The number is: ', n)
     
     
