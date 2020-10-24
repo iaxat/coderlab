@@ -1,7 +1,10 @@
 def descending_order(n):
     print('The number is: ', n)
-    des_list = []
-    des_list = n
+    lst = []
+    for i in range(0,n):
+        ele = int(input())
+        lst.append(ele)
+    print(lst)
     
 # The main function
 n = int(input('Enter the number: '))
