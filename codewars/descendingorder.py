@@ -11,6 +11,7 @@ def descending_order():
     lst_new = lst_int.sort(reverse=True)
     print(lst_new)
     
+    
 
 # The main function
 descending_order()
