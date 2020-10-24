@@ -1,3 +1,4 @@
 def descending_order(n):
-    print()
+    print('The number is: ', n)
+    
 
