@@ -7,7 +7,9 @@ def descending_order():
 
     for i in range(0,len(lst)):
         lst_int.append(int(lst[i]))
-    length_list = len()
+    
+    length_list = len(lst_int)
+    
     # print('lst',lst)
     # print('lst_int',lst_int)
     lst_new = lst_int.sort(reverse=True)
