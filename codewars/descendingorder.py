@@ -3,6 +3,7 @@ def descending_order():
     lst = list(str(n))
     print('The number is: ', lst)
     
+    list.sort()
     
     
 
