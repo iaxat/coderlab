@@ -1,5 +1,6 @@
 def descending_order(n):
     print('The number is: ', n)
+    des_list = []
     
 
 # The main function
