@@ -1,7 +1,7 @@
 def descending_order():
     n = int(input('Enter the number: '))
-    lst = list(n)
-    print('The number is: ', n)
+    lst = list(str(n))
+    print('The number is: ', lst)
     
     
     
