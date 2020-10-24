@@ -7,6 +7,7 @@ def descending_order():
         lst.append(ele)
     print(lst)
     
-# The main function
 
+
+# The main function
 descending_order()
