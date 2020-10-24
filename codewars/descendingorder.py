@@ -1,3 +1,3 @@
-def descending_order():
-    print("")
+def descending_order(n):
+    print()
 
