@@ -1,5 +1,4 @@
 def descending_order():
-    n = 0
     n = int(input('Enter the number: '))
     print('The number is: ', n)
     lst = []
@@ -10,4 +9,4 @@ def descending_order():
     
 # The main function
 
-descending_order(n)
+descending_order()
