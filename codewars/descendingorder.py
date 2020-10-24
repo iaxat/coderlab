@@ -3,5 +3,5 @@ def descending_order(n):
 
 
 # The main function
-n = int()
+n = int(input('Enter the number: '))
 descending_order()
