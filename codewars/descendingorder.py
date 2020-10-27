@@ -10,8 +10,8 @@ def descending_order():
     
     length_list = len(lst_int)
     
-    # print('lst',lst)
-    # print('lst_int',lst_int)
+    print('lst',lst)
+    print('lst_int',lst_int)
     lst_new = lst_int.sort(reverse=True)
     print(lst_new)
     
