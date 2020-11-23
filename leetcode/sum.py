@@ -8,6 +8,6 @@ def two_sum(list, target):
 
 
 if __name__ == "__main__":
-    list = int(input("Enter the numbers"))
+    list = input("Enter the numbers")
     target = int(input("Enter Target Value"))
     two_sum(list, target)
