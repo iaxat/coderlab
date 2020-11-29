@@ -1,7 +1,7 @@
 # Project Euler 
 # Multiples of 3 and 5
 
-def nultiples():
+def multiples():
     n = int(input("Enter the Number"))
     
 
