@@ -3,9 +3,14 @@
 def even():
     data = int(input('Enter the Value'))
     print('The Even Fibonacci Problem')
-    series_f = [1,2]
     for data in data:
         
+
+# Method 2
+def even2():
+    data_f = int(input('Number'))
+    while i>=0:
+
 
     
 
