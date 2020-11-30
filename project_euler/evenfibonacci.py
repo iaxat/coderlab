@@ -22,7 +22,8 @@ def fib():
 
 
 def fib_reverse():
-
+    final_number = int(input('Enter the final number: '))
+    
 
 
 if __name__ == "__main__":
