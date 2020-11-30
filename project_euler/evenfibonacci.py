@@ -22,12 +22,9 @@ def fib():
 
 
 def fib_reverse():
-    
+
 
 
 if __name__ == "__main__":
     fib()
-
-
-
-
+    fib_reverse()
