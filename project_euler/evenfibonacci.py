@@ -17,6 +17,6 @@ def fib():
     
     print(arr_fib)
     print(len(arr_fib))
-    
+
 
 fib()
