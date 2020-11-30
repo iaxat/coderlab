@@ -10,6 +10,7 @@ def even():
 def even2():
     data_f = int(input('Number'))
     while i>=0:
+        
 
 
     
