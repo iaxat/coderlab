@@ -10,7 +10,7 @@ def even():
 def even2():
     data_f = int(input('Number'))
     while i>=0:
-        
+
 
 
     
@@ -19,3 +19,4 @@ def even2():
 
 if __name__ == "__main__":
     even()
+    even2()
