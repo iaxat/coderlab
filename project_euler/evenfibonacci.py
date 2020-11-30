@@ -19,4 +19,15 @@ def fib():
     print(len(arr_fib))
 
 
-fib()
+
+
+def fib_reverse():
+    
+
+
+if __name__ == "__main__":
+    fib()
+
+
+
+
