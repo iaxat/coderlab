@@ -4,8 +4,13 @@ def fib():
     sum_tot = 0
     number = int(input('Enter Number: '))
     i = 0
+    l = 2
     arr_fib = [1,2]
     
+    while i <= number:
+        while l == 0:
+            l = l-1
+            
     
     
     
