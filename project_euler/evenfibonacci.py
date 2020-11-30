@@ -7,7 +7,7 @@ def fib():
    
     arr_fib = [1,2]
     
-    while i <= number-2:
+    while i != number-2:
         l = 2
         while l != 0:
             l = l-1
