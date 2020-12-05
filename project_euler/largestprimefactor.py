@@ -1,6 +1,7 @@
 # Largest Prime Factor
 
 def prime_factor():
+    data = int(input('Enter the Number: '))
     
 
 
