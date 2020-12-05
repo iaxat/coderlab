@@ -12,14 +12,11 @@ def even_fib():
         new = n1 + n2
         n1 = n2
         n2 = new
-
         counter += 1
     
-    
+
 
     print(fib_arr)
-
-    
 
     
 # main function
