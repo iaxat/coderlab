@@ -31,6 +31,10 @@ def reverse_fib():
     rev_fib_arr = []
 
     while new <= sum:
+        rev_fib_arr.append(n1)
+        new = n1 + n2
+        n1 = n2
+        n2 = new
         
 
 
