@@ -1,7 +1,7 @@
 # Even Fibonacci
 
 def even_fib():
-    counter = 0
+    counter = 1
     number = int(input('The number for Fibonacci series: '))
     n1,n2 = 1,2
     fib_arr = []
@@ -14,9 +14,6 @@ def even_fib():
         n1 = n2
         n2 = new
         
-    
-
-
 
     print(fib_arr)
 
