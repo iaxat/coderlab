@@ -24,6 +24,9 @@ def even_fib():
     print(sum)
     
 
+def reverse_fib():
+    sum = 4000000
+    
     
 # main function
 if __name__ == "__main__":
