@@ -17,7 +17,11 @@ def even_fib():
         
 
     print(fib_arr)
+
+    for i in fib_arr:
+        sum += i
     
+    print(sum)
     
 
     
