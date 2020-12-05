@@ -37,7 +37,6 @@ def reverse_fib():
         n1 = n2
         n2 = new
     
-    print(rev_fib_arr)
 
     for i in rev_fib_arr:
         if i%2 == 0:
