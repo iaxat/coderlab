@@ -8,7 +8,7 @@ def even_fib():
 
 
     while counter<=number:
-        fib_arr.append(n1)
+        # fib_arr.append(n1)
         fib_arr.append(n2)
         new = n1 + n2
         n1 = n2
