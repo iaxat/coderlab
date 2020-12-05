@@ -5,6 +5,7 @@ def even_fib():
     number = int(input('The number for Fibonacci series: '))
     n1,n2 = 1,2
     fib_arr = []
+    sum = 0
 
 
     while counter<=number:
@@ -16,6 +17,8 @@ def even_fib():
         
 
     print(fib_arr)
+
+    
 
     
 # main function
