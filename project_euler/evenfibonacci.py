@@ -26,8 +26,12 @@ def even_fib():
 
 def reverse_fib():
     sum = 4000000
+    new = 0
     n1,n2 = 1,2
-    
+    rev_fib_arr = []
+
+    while new <= sum:
+        
 
 
 
