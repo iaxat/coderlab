@@ -28,13 +28,13 @@ def reverse_fib():
     sum = 4000000
     new = 0
     n1,n2 = 1,2
+    rev_fib_arr = []
 
     while new <= sum:
+        rev_fib_arr.append(n1)
         new = n1 + n2
         n1 = n2
         n2 = new
-        if 
-
 
     
 # main function
