@@ -2,7 +2,7 @@
 
 def even_fib():
     counter = 0
-    number = int(input('The number for Fibonacci series'))
+    number = int(input('The number for Fibonacci series: '))
     n1,n2 = 1,2
     fib_arr = []
 
