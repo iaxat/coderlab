@@ -1,6 +1,7 @@
 # Even Fibonacci
 
 def even_fib():
+    counter = 0
     
 
 
