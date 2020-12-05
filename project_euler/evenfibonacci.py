@@ -4,6 +4,8 @@ def even_fib():
     counter = 0
     number = int(input('The number for Fibonacci series'))
     n1,n2 = 1,2
+    
+
 
     while counter<=number:
         new = n1 + n2
@@ -12,7 +14,7 @@ def even_fib():
 
         counter += 1
 
-        
+
     
 
     
