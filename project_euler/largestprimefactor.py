@@ -26,7 +26,6 @@ def get_prime_factors(n):
 
     return prime_factors
 
-
 # Read number from user
 number = int(input('Enter number: '))
 
