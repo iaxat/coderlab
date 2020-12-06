@@ -9,6 +9,7 @@
 #     prime_factor(n=int(input('Enter the Number')))
 
 
+
 # Function definition to get all prime factors
 def get_prime_factors(n):
     i = 2
