@@ -2,7 +2,7 @@
 def get_prime_factors(n):
     i = 2
     prime_factors = []
-    while i*i <= n:
+    while i**2 <= n:
         if n % i == 0:
             prime_factors.append(i)
             n //= i
