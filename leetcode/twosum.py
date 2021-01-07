@@ -12,18 +12,11 @@
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         nums.sort()
+        list_ = []
         # case 1
         # when the 1st digit of sorted array nums is negative
-        if nums[0] < 0:
-            for num in nums:
-                
-
-        # case 2
-        # when the 1st digit of sorted array nums is positive
-        elif nums[0] >= 0:
-
-
-
-
-# method 2
-# def two_sum_method2():
+        for j in nums:
+            for i in nums:
+                if (nums[j] + nums[i+1]) == target:
+                    list_.append(j)
+                    list_.append(i)
