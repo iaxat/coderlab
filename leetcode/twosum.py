@@ -15,8 +15,8 @@ class Solution:
         list_ = []
         # case 1
         # when the 1st digit of sorted array nums is negative
-        for j in nums:
-            for i in nums:
+        for j in len(nums):
+            for i in len(nums):
                 if (nums[j] + nums[i]) == target & j!=i:
                     list_.append(j)
                     list_.append(i)
