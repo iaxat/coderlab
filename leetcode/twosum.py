@@ -13,9 +13,14 @@ class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         nums.sort()
         # case 1
-        # when the target is negative
-        if nums[0] <0:
-            
+        # when the 1st digit of sorted array nums is negative
+        if nums[0] < 0:
+
+
+        # case 2
+        # when the 1st digit of sorted array nums is positive
+        elif nums[0] >= 0:
+
 
 
 
