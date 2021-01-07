@@ -15,7 +15,8 @@ class Solution:
         # case 1
         # when the 1st digit of sorted array nums is negative
         if nums[0] < 0:
-
+            for num in nums:
+                
 
         # case 2
         # when the 1st digit of sorted array nums is positive
@@ -26,4 +27,3 @@ class Solution:
 
 # method 2
 # def two_sum_method2():
-    
