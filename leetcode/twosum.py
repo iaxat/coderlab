@@ -17,6 +17,7 @@ class Solution:
 
 
 
+
 # method 2
 def two_sum_method2():
     
