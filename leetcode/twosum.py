@@ -22,4 +22,3 @@ class Solution:
                     list_.append(i)
         print(list_)
         return list_
-# 
