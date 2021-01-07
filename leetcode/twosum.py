@@ -14,10 +14,11 @@ class Solution:
         nums.sort()
         # case 1
         # when the target is negative
-
+        if nums[0] <0:
+            
 
 
 
 # method 2
-def two_sum_method2():
+# def two_sum_method2():
     
