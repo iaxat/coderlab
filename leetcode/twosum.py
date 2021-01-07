@@ -17,6 +17,8 @@ class Solution:
         # when the 1st digit of sorted array nums is negative
         for j in nums:
             for i in nums:
-                if (nums[j] + nums[i+1]) == target:
+                if (nums[j] + nums[i]) == target & j!=i:
                     list_.append(j)
                     list_.append(i)
+        print(list_)
+        return list_
