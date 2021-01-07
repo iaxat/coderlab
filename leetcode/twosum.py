@@ -7,8 +7,16 @@
 # three cases defined in this problem which can make it smaller 
 # in compare to other methods
 
+
+# method 1
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         nums.sort()
         # case 1
-        # 
+        # when the target is negative
+
+
+
+# method 2
+def two_sum_method2():
+    
