@@ -6,5 +6,5 @@
 #     def twoSum(self, nums: list[int], target: int) -> list[int]:
 
 
-def twosum(nums:list[int], target:int) -> list[int]:
+def twosum():
     
