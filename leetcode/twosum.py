@@ -9,7 +9,6 @@
 
 
 # method 1
-# method 1
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         list_ = []
@@ -19,3 +18,4 @@ class Solution:
                     list_.append(j)
                     list_.append(i)
                     return list_
+
