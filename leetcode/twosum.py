@@ -9,18 +9,13 @@
 
 
 # method 1
+# method 1
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        nums.sort()
         list_ = []
-        # case 1
-        # when the 1st digit of sorted array nums is negative
-        for j in len(nums):
-            for i in len(nums):
-                if (nums[j] + nums[i]) == target & j!=i:
+        for i in range(0,len(nums)-1):
+            for j in range(i+1,len(nums)):
+                if (nums[i] + nums[j] == target) :
                     list_.append(j)
                     list_.append(i)
-        print(list_)
-        return list_
-
-
+                    return list_
