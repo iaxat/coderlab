@@ -12,3 +12,4 @@ fn main() {
     // Print text to the console
     println!("Hello World! this is rust here");
 }
+
