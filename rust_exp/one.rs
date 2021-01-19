@@ -2,3 +2,6 @@
 // The standard Library Rust
 // Following Rust Documentation to practice
 
+fn main() {
+    
+}
