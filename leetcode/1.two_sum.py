@@ -18,4 +18,3 @@ class Solution:
                     list_.append(j)
                     list_.append(i)
                     return list_
-
