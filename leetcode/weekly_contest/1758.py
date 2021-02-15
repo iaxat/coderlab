@@ -4,7 +4,7 @@ class Solution:
     def minOperations(self, s: str) -> int:
         operations = 0
         
-        obj = ["Even" if i%2==0 else "Odd" for i in range(10)]
+        obj = ["0" if i%2==0 else "1" for i in s]
         print(obj)
 
 
