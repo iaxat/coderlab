@@ -21,8 +21,10 @@ class Sliding():
     def slide_karo(self):
         print('slide karo bhai')
 
-window_size = 0
-arr = []
 
-slide = Sliding()
+
+window_size = 3
+arr = [2,5,1,8,2,9,1]
+
+slide = Sliding(window_size,arr)
 slide.slide_karo()
