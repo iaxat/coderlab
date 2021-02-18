@@ -54,16 +54,14 @@ class Sliding:
         i = make_window[0]
         j = make_window[-1]
 
-        print('i is ', i)
-        print('j is ', j)
+        # print('i is ', i)
+        # print('j is ', j)
 
         while j<=self.size:
-            
-            while k<=j:
-                window_sum += self.arr[i]
-                k+=1
-
-            print(window_sum)
+            new_arr = self.arr[i:j+1]
+            print(new_arr)
+            window_sum = sum('window: ',new_arr)
+            print('window sum: ', window_sum)
             i += 1
             j += 1
             window_sum_arr.append(window_sum)
@@ -99,3 +97,5 @@ arr = [2, 5, 1, 8, 2, 9, 1]
 
 slide = Sliding(window_size, arr)
 slide.slide_karo()
+
+# done
