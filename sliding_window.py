@@ -8,15 +8,27 @@ class Sliding:
         self.arr = arr
         self.size = len(arr)
 
-    def make_window(self, window_size, arr):
+
+
+    def make_window_index(self, window_size, arr):
         windows = []
-        i = 0
-        for j in (0, self.size):
-            if j - i + 1 == self.window_size:
-                break
-        windows.append(0)
-        windows.append(j)
+        print(arr)
+
+        
+
+        # for i in (0,self.size):
+        #     for j in (0, self.size):
+        #         if j - i + 1 == self.window_size:
+        #             print('\ndone done done\n')
+        #             windows.append(i)
+        #             windows.append(j)
+        #             break
+        #         else:
+        #             pass
+        
         print(windows)
+        print(len(windows))
+
         return windows
 
     def find_max(self, window_sum_arr):
@@ -31,15 +43,16 @@ class Sliding:
     def find_sum(self, make_window):
         window_sum = 0
         window_sum_arr = []
+
         i = make_window[0]
         j = make_window[1]
 
         while j <= self.size - 1:
             calculate_win = j - i
             now = i
-            window_sum = self.arr[now]
+            
             while calculate_win > 0:
-                window_sum = self.arr[now + calculate_win]
+                window_sum = window_sum = self.arr[now] + self.arr[now + calculate_win]
                 calculate_win -= 1
                 i += 1
                 j += 1
@@ -52,8 +65,8 @@ class Sliding:
 
     def slide_karo(self):
         print("slide karo bhai")
-        make_window = self.make_window(self.window_size, self.arr)
-        sum_array = self.find_sum(make_window)
+        window_index_ = self.make_window_index(self.window_size, self.arr)
+        sum_array = self.find_sum(window_index_)
         self.find_max(sum_array)
 
 
