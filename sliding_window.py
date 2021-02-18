@@ -36,13 +36,13 @@ class Sliding():
         while j<=self.size-1:
             calculate_win = j-i+1
             now = i
-            while calculate_win >= 0:
 
-            window_sum = self.arr[now] + self.arr[i]
+            window_sum = self.arr[now] + self.arr[now+]
 
             i+=1
             j+=1
-                
+            
+        window_sum_arr.append(window_sum)
 
         return window_sum_arr
 
