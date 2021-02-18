@@ -13,8 +13,11 @@ class Sliding:
     def make_window_index(self, window_size, arr):
         windows = []
         print(arr)
-
-        
+        i = 0
+        while window_size>=1:
+            windows.append(i)
+            window_size -= 1
+            i+=1
 
         # for i in (0,self.size):
         #     for j in (0, self.size):
@@ -33,35 +36,56 @@ class Sliding:
 
     def find_max(self, window_sum_arr):
         print("find max")
-        max_max = 0
-
+        max_max = max(window_sum_arr)
         print("max is ", max_max)
+        return max_max
 
     def find_min(self, window_sum_arr):
         print("find min")
+        min_min = min(window_sum_arr)
+        print('min is ', min_min)
+        return min_min
 
     def find_sum(self, make_window):
         window_sum = 0
+        k = 0
         window_sum_arr = []
 
         i = make_window[0]
-        j = make_window[1]
+        j = make_window[-1]
 
-        while j <= self.size - 1:
-            calculate_win = j - i
-            now = i
+        print('i is ', i)
+        print('j is ', j)
+
+        while j<=self.size:
             
-            while calculate_win > 0:
-                window_sum = window_sum = self.arr[now] + self.arr[now + calculate_win]
-                calculate_win -= 1
-                i += 1
-                j += 1
-            print(window_sum)
+            while k<=j:
+                window_sum += self.arr[i]
+                k+=1
 
-        window_sum_arr.append(window_sum)
+            print(window_sum)
+            i += 1
+            j += 1
+            window_sum_arr.append(window_sum)
+        
         print(window_sum_arr)
 
+        # while j <= self.size - 1:
+        #     calculate_win = j - i
+        #     now = i
+            
+        #     while calculate_win > 0:
+        #         window_sum = window_sum = self.arr[now] + self.arr[now + calculate_win]
+        #         calculate_win -= 1
+        #         i += 1
+        #         j += 1
+        #     print(window_sum)
+
+        # window_sum_arr.append(window_sum)
+        # print(window_sum_arr)
+
         return window_sum_arr
+
 
     def slide_karo(self):
         print("slide karo bhai")
