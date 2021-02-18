@@ -30,11 +30,23 @@ class Sliding():
     def find_sum(self,make_window):
         window_sum = 0
         window_sum_arr = []
+        i = make_window[0]
+        j = make_window[1]
 
-        
+        while j<=self.size-1:
+            calculate_win = j-i+1
+            now = i
+            while calculate_win >= 0:
+
+            window_sum = self.arr[now] + self.arr[i]
+
+            i+=1
+            j+=1
+                
+
         return window_sum_arr
 
-    def slide_karo(self,windows):
+    def slide_karo(self):
         print('slide karo bhai')
         make_window = self.make_window(self.window_size,self.arr)
         sum_array = self.find_sum(make_window)
