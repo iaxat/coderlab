@@ -60,7 +60,7 @@ class Sliding:
         while j<=self.size:
             new_arr = self.arr[i:j+1]
             print(new_arr)
-            window_sum = sum('window: ',new_arr)
+            window_sum = sum(new_arr)
             print('window sum: ', window_sum)
             i += 1
             j += 1
