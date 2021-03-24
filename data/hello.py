@@ -1,9 +1,14 @@
 import json
 import numpy as np
+import tensorflow as tf
 
 
 def convert_json_numpy():
-    with open('result.json') as f:
-        data = json.load(f)
-    print(data)
-    return np.asarray(data)
+    with open('EmployeeData.json') as json_file:
+        data = json.load(json_file)
+        # print(data)
+    print(np.asarray(data))
+
+    data_set =
+
+convert_json_numpy()
