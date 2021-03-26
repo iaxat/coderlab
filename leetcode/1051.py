@@ -1,6 +1,8 @@
 class Solution:
     def heightChecker(self, heights):
 
+
+        # method 1
         # count = 0
         # check = sorted(heights)
         # for x,y in zip(heights,check):
