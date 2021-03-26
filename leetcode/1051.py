@@ -1,7 +1,6 @@
 class Solution:
     def heightChecker(self, heights):
 
-
         # method 1
         # count = 0
         # check = sorted(heights)
@@ -10,11 +9,9 @@ class Solution:
         #         count += 1
         # return count
 
-
         self.heights = heights
         counter = 0
         len_heights = len(heights)
-        i = 0
 
         for i in range(0,len_heights-1):
             if heights[i] > heights[i+1]:
