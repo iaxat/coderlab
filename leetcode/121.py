@@ -1,7 +1,7 @@
 import sys
 class Solution:
     def maxProfit(self, prices):
-        
+
         # profit = 0
         # le = len(prices)
         # for i in range(0,le):
@@ -14,7 +14,7 @@ class Solution:
         #                 if diff>profit:
         #                     profit = diff
         # print(profit)
-
+        
         max_profit=0
         le = len(prices)
         min_price = sys.maxsize
