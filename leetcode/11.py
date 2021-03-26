@@ -15,7 +15,7 @@ class Solution:
         new_arr = np.unique(alter_nums)
         new_arr = list(new_arr)
         return len(new_arr)
-
+        
 nums = [1,1,2]
 sol = Solution()
 sol.removeDuplicates(nums)
