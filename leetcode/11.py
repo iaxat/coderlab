@@ -12,8 +12,9 @@ class Solution:
         # print(alter_nums)
         len_alter_nums = len(alter_nums)
         # print(len_alter_nums)
-        for i in range(0,len_alter_nums):
-            s
+        new_arr = np.unique(alter_nums)
+        new_arr = list(new_arr)
+        return len(new_arr)
 
 nums = [1,1,2]
 sol = Solution()
