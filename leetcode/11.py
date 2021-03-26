@@ -3,4 +3,18 @@
 # Input: height = [1,8,6,2,5,4,8,3,7]          Output: 49
 # Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
 
+import numpy as np
 
+class Solution:
+    def removeDuplicates(self, nums):
+        self.nums = nums
+        alter_nums = np.array(nums)
+        # print(alter_nums)
+        len_alter_nums = len(alter_nums)
+        # print(len_alter_nums)
+        for i in range(0,len_alter_nums):
+            s
+
+nums = [1,1,2]
+sol = Solution()
+sol.removeDuplicates(nums)
