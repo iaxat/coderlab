@@ -1,6 +1,5 @@
 class Solution:
     def heightChecker(self, heights):
-
         # method 1
         # count = 0
         # check = sorted(heights)
@@ -9,6 +8,7 @@ class Solution:
         #         count += 1
         # return count
 
+        # method 2
         self.heights = heights
         counter = 0
         len_heights = len(heights)
