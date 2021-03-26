@@ -5,6 +5,7 @@
 # Input: heights = [1,1,4,2,1,3]    Output: 3
 # Input: heights = [5,1,2,3,4]  Output: 5
 
+
 class Solution:
     def heightChecker(self, heights):
         # method 1
