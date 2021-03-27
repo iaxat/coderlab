@@ -3,9 +3,7 @@ class Solution:
         self.image = image
         print(image)
         return image
-    
-
-
+        
 
 image = [[1,1,0],[1,0,1],[0,0,0]]
 sol = Solution()
