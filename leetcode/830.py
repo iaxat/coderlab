@@ -29,15 +29,16 @@ class Solution:
         #         output_.append([final_result[0],final_result[len(final_result)-1]])
         if len(s)<3:
             return []
-        n = 3
+        n = len(s)
         while n>=3:
             store_iter = []
             for i in range(0,len(s)):
+                if (i+n) <= 
                 store_iter.append(s[i],s[i+n])
                 
 
                 i += 1
-            n += 1
+            n -= 1
 
 s = "abcdddeeeeaabbbcd"
 print('[[3,5],[6,9],[12,14]]')
