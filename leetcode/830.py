@@ -26,6 +26,10 @@ class Solution:
         #             if i == s[j]:
         #                 final_result.append(int(j))
         #         output_.append([final_result[0],final_result[len(final_result)-1]])
+        if len(s)<3:
+            return []
+
+
 
 
 
@@ -33,6 +37,6 @@ class Solution:
         
 
 s = "abcdddeeeeaabbbcd"
-
+print('[[3,5],[6,9],[12,14]]')
 sol = Solution()
 sol.largeGroupPositions(s)
