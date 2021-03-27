@@ -1,9 +1,9 @@
 class Solution:
     def flipAndInvertImage(self, image):
         self.image = image
-        
+        print(image)
         return image
-
+    
 
 
 
