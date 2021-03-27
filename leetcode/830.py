@@ -1,10 +1,11 @@
 from collections import Counter
+from itertools import islice
 import re
 
 class Solution:
     def largeGroupPositions(self, s):
         self.s = s
-        # result = []
+        result = []
         # output_ = []
         # s = list(s)
         # counter = Counter(s)
@@ -28,13 +29,15 @@ class Solution:
         #         output_.append([final_result[0],final_result[len(final_result)-1]])
         if len(s)<3:
             return []
+        n = 3
+        while n>=3:
+            store_iter = []
+            for i in range(0,len(s)):
+                store_iter.append(s[i],s[i+n])
+                
 
-
-
-
-
-
-        
+                i += 1
+            n += 1
 
 s = "abcdddeeeeaabbbcd"
 print('[[3,5],[6,9],[12,14]]')
