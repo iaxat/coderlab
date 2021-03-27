@@ -1,7 +1,7 @@
 class Solution:
     def flipAndInvertImage(self, image):
         self.image = image
-             
+        
         return image
 
 
