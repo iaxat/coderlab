@@ -1,7 +1,7 @@
 class Solution:
     def longestCommonPrefix(self, strs):
-        for i in strs:
-            
+        len_str = len(strs)
+        
 
 
 strs = ["flower","flow","flight"]
