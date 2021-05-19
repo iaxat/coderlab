@@ -1,31 +1,16 @@
-# Symbol       Value
-# I             1
-# V             5
-# X             10
-# L             50
-# C             100
-# D             500
-# M             1000
-
-
 class Solution:
     def romanToInt(self, s):
-        result = 0
-        s = list(s)
-        I = 1
-        V = 5
-        X = 10
-        L = 50
-        C = 100
-        D = 500
-        M = 1000
-        
-        roman_dict = {I:[V,X], X:[L,C], C:[D,M]}
-        for i in s:
-            
+        roman_dict={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+        sum=0
+        y=0
+        for i in s[::-1]:
+            if y<=roman_dict[i]:
+                sum+=roman_dict[i]
+                y=roman_dict[i]
+            else:
+                sum-=roman_dict[i]
+        print(sum)
 
-        return result
-
-s = "III"
+s = "IXCX"
 sol = Solution()
 sol.romanToInt(s)
