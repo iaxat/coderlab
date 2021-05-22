@@ -20,6 +20,7 @@ class Solution:
             if len(temp_arr) == 0:
                 return ""
             else:
+                print(temp_arr)
                 return temp_arr
 
 
