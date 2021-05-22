@@ -7,10 +7,10 @@ class Solution:
                 temp_len = len(strs[i])
                 temp_dict[temp_len] = strs[i]
                 min_key = min(temp_dict)
-            for j in min_key:
+            # for j in min_key:
                 
 
-                
+
         print(temp_dict)
 
 
