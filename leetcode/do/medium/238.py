@@ -1,6 +1,7 @@
 import numpy as np
 
 class Solution:
+    # method 1
     def productExceptSelf(self, nums):
         nums = np.array(nums)
         result = []
@@ -13,6 +14,7 @@ class Solution:
         return result
 
 
+    # method 2
     def productExceptSelf1(self, nums):
         
 
