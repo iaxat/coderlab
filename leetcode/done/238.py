@@ -13,14 +13,6 @@ class Solution:
         print(result)
         return result
 
-
-    # method 2
-    def productExceptSelf1(self, nums):
-        
-
-
-
-
 nums = [1,2,3,4]
 sol = Solution()
 sol.productExceptSelf(nums)
