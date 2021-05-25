@@ -2,6 +2,12 @@
 
 class Solution:
     def runningSum(self, nums):
+		# lst = []
+        # num = 1
+        # while len(lst) != len(nums):
+        #     lst.append(sum((nums[0:num])))
+        #     num += 1
+        # return lst
         new_arr = []
         counter = 0
         for i in nums:
