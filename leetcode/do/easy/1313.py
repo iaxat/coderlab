@@ -3,8 +3,8 @@
 class Solution:
     def decompressRLElist(self, nums):
         len_nums = len(nums)
-        for i in nums:
-
+        for i in range(len_nums):
+            
 
 
 
