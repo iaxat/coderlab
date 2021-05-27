@@ -2,7 +2,14 @@
 
 class Solution:
     def createTargetArray(self, nums, index):
-        for i in range()
+        result = []
+        for i in range(len(index)):
+            if len(result)>=i:
+                index_point = index[i]
+                result.insert(result[index_point],nums[i])
+            else:
+                result.append(nums[i])
+        
 
 
 
