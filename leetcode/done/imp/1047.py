@@ -2,14 +2,14 @@
 
 class Solution:
     def removeDuplicates(self, S: str) -> str:
-        output = []
+        result = []
 
-        for ch in S:
-            if output and ch == output[-1]: 
-                output.pop()
+        for i in S:
+            if result and i == result[-1]: 
+                result.pop()
             else: 
-                output.append(ch)
-        return ''.join(output)
+                result.append(i)
+        return ''.join(result)
 
 S = "abbaca"
 sol = Solution()
