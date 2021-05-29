@@ -11,14 +11,13 @@ class Solution:
                         print(s[i],s[i+1])
                         s.pop(i)
                         s.pop(i)
-                        print(s)
-                        i = 0
-            
+                        print(str(s))
+                        # why not removing aa
                 else:
                     a = False
         s = str(s)
-        print(s)
         return s
+
 
 s = "abbaca"
 sol = Solution()
