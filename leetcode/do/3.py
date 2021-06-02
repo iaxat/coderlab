@@ -3,12 +3,9 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         result = []
-        counter = 0
+        stacks = []
         for c in s:
-            if 
-
-        print(result)
-        # return max(result)
+            
 
 
 s = "abcabcbb"

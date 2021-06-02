@@ -4,7 +4,6 @@ class Solution:
     def longestPalindrome(self, s: str) -> str:
 
         # method 1  - time exceeded
-
         # result = []
         # final = 0
         # for i in range(0,len(s)):
@@ -18,8 +17,10 @@ class Solution:
         #         res = k
         # return res
 
+
         # method 2
         
+
 
 s = "babad"
 sol = Solution()
