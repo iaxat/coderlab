@@ -18,9 +18,12 @@ class Dependent_Libraries():
     def read_file(self,file):
         with open(file) as f:
             lines = f.readlines()
-    
 
-    def extract_data(self):
+        return lines
+
+    def extract_data(self,lines):
+        
+
 
     
     def create_relation_graph(self):
