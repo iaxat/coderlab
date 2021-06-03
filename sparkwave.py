@@ -11,7 +11,8 @@ class Dependent_Libraries():
             lines = f.readlines()
         new_line = []
         for line in lines:
-            temp_line = line.replace(" depends on ",",")
+            line = line.replace(" depends on ",",")
+            temp_line = line.replace(" ","")
             new_line.append(temp_line.replace("\n", ""))
         return new_line
 
@@ -21,13 +22,14 @@ class Dependent_Libraries():
     def extract_data(self,new_line):
         self.data_dict = data_dict = {}
         for i in range(len(new_line)):
-            
-            # if i[0] in data_dict.keys():
-            #     data_dict[i[0]].append()
-            # else:
-            #     data_dict[i[]]
-
-            print(new_line[i])
+            if len(new_line[i])>3:
+                chunk = new_line[i].split(',')
+                print(chunk)
+                temp_arr = []
+                for j in range(len(chunk)):
+                    data_dict[j[0]]=temp_arr.append(j)
+            elif len(new_line[i])==3:
+                print('.')
         print(data_dict)
         return data_dict
 
@@ -54,7 +56,6 @@ class Dependent_Libraries():
             result = self.create_relation_graph(data_dict,data_dict[i])
             print(result)
 
-
 # initiation
 sol = Dependent_Libraries()
-print(sol.start_program())
+sol.start_program()
