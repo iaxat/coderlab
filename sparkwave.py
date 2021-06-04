@@ -7,7 +7,6 @@ class Dependent_Libraries():
     def __init__(self) -> None:
         pass
 
-
     def read_file(self,file):
         with open(file) as f:
             lines = f.readlines()
