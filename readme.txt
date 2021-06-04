@@ -1,2 +1,6 @@
-X depends on Y R
-Y depends on Z
+A depends on B C
+B depends on C E
+C depends on G
+D depends on A F
+E depends on F
+F depends on H

@@ -78,7 +78,7 @@ class Dependent_Libraries():
         new_line = self.read_file('readme.txt')
         data_dict = self.extract_data(new_line)
         # graph = {'X': ['Y', 'R'], 'Y': ['Z'], 'R':[], 'Z':[]}
-        result = self.create_relation_graph(data_dict,"X")
+        result = self.create_relation_graph(data_dict,"A")
         print(result)
 
 # initiation
