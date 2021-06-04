@@ -12,7 +12,7 @@ class Solution:
                     continue
 
         # return result
-        print(result)
+        # print(result)
 
         # method 2
         # using the target subtraction
@@ -23,14 +23,21 @@ class Solution:
                     result = [i,j]
         
         # return result
-        print(result)
+        # print(result)
 
 
         # method 3
-        # using two pass hash table
+        hash_table = {}
+        for i in range(len(nums)):
+            if nums[i] in hash_table:
+                print([hash_table[nums[i]], i])
+            else:
+                hash_table[target - nums[i]] = i
+
+
+
+        # method 4
         
-
-
 
 
 nums = [2,7,11,15]
