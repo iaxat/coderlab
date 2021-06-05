@@ -62,11 +62,13 @@ class Dependent_Libraries:
         while queue:
             m = queue.pop(0)
             result.append(m)
+            # neighbour search in dict
             for neighbour in data_dict[m]:
                 if neighbour not in visited:
                     visited.append(neighbour)
                     queue.append(neighbour)
 
+        # final string for output
         str_final = result[0] + ' depends on ' + ''.join(result[1:len(result)])
         print(str_final)
         return str_final
