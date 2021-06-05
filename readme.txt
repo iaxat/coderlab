@@ -1,8 +1,6 @@
-A depends on B
-C depends on A D
+A depends on B C
+B depends on C E
+C depends on G
 D depends on A F
-E depends on B
-B depends on G
-E depends on G
+E depends on F
 F depends on H
-I depends on E F

@@ -1,11 +1,9 @@
-import unittest
-
 # Job Application Coding Assignment
 
 # Funtions implemented in the file
 class Dependent_Libraries:
     def __init__(self) -> None:
-        pass
+        self.data_dict = {}
 
     def read_file(self, file):
         with open(file) as f:
@@ -22,30 +20,35 @@ class Dependent_Libraries:
     # Which will return the values
     def extract_data(self, new_line):
         total_elements = []
-        self.data_dict = data_dict = {}  # hbyhbyhbybybbyh
         for i in range(len(new_line)):
             if len(new_line[i]) >= 4:
                 chunk = new_line[i].split(",")
                 part = list(chunk[1])
-                data_dict[chunk[0]] = part
+                if chunk[0] in self.data_dict.keys():
+                    self.data_dict[chunk[0]].append(part)
+                else:
+                    self.data_dict[chunk[0]] = part
                 total_elements.append(chunk[0])
                 for k in chunk[1]:
                     total_elements.append(k)
             elif len(new_line[i]) < 4:
                 chunk = new_line[i].split(",")
-                data_dict[chunk[0]] = list(chunk[1])
+                if chunk[0] in self.data_dict.keys():
+                    self.data_dict[chunk[0]].append(chunk[1])
+                else:
+                    self.data_dict[chunk[0]] = list(chunk[1])
                 total_elements.append(chunk[1])
 
         for ele in total_elements:
-            if ele not in data_dict.keys():
-                data_dict[ele] = []
+            if ele not in self.data_dict.keys():
+                self.data_dict[ele] = []
 
-        print(data_dict)
-        return data_dict
+        return self.data_dict
 
     def create_relation_graph(self, data_dict, node):
         visited = []
         queue = []
+        result = []
         if len(data_dict[node]) == 0 and len(queue) > 0:
             return queue
         elif len(data_dict[node]) == 0 and len(queue) == 0:
@@ -54,18 +57,21 @@ class Dependent_Libraries:
         queue.append(node)
         while queue:
             m = queue.pop(0)
-            print(m, end=" ")
+            result.append(m)
             for neighbour in data_dict[m]:
                 if neighbour not in visited:
                     visited.append(neighbour)
                     queue.append(neighbour)
-        return queue
+
+        str_final = result[0]+' depends on '+ ''.join(result[1:len(result)])
+        print(str_final)
+        return str_final
 
     def start_program(self):
         new_line = self.read_file("readme.txt")
         data_dict = self.extract_data(new_line)
-        result = self.create_relation_graph(data_dict, "E")
-        print(result)
+        for data in data_dict.keys():
+            self.create_relation_graph(data_dict, data)
 
 
 # initiation
