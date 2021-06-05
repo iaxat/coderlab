@@ -45,10 +45,14 @@ class Dependent_Libraries:
 
         return self.data_dict
 
+    # creating graph and using it to find relation
+    # BFS model
     def create_relation_graph(self, data_dict, node):
         visited = []
         queue = []
         result = []
+        # temp array for logic implementation
+        # conditions for specific snearios
         if len(data_dict[node]) == 0 and len(queue) > 0:
             return queue
         elif len(data_dict[node]) == 0 and len(queue) == 0:
@@ -63,10 +67,11 @@ class Dependent_Libraries:
                     visited.append(neighbour)
                     queue.append(neighbour)
 
-        str_final = result[0]+' depends on '+ ''.join(result[1:len(result)])
+        str_final = result[0] + ' depends on ' + ''.join(result[1:len(result)])
         print(str_final)
         return str_final
 
+    # running program
     def start_program(self):
         new_line = self.read_file("readme.txt")
         data_dict = self.extract_data(new_line)
