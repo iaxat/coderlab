@@ -15,12 +15,12 @@ class Solution:
         # print(result)
 
         # method 2
-        hash_table = {}
-        for i in range(len(nums)):
-            if nums[i] in hash_table:
-                return([hash_table[nums[i]], i])
-            else:
-                hash_table[target - nums[i]] = i
+        # hash_table = {}
+        # for i in range(len(nums)):
+        #     if nums[i] in hash_table:
+        #         # return([hash_table[nums[i]], i])
+        #     else:
+        #         hash_table[target - nums[i]] = i
 
 
         # method 3
@@ -30,7 +30,7 @@ class Solution:
             if potentialMatch in nums_hash:
                 print([nums_hash[potentialMatch], i])
             nums_hash[num] = i
-
+            print(i,num)
 
         # method 4
         for idx, val in enumerate(nums):
