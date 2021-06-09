@@ -2,7 +2,7 @@
 
 class Solution:
     def minTimeToVisitAllPoints(self, points):
-
+        
         
 
 points = [[1,1],[3,4],[-1,0]]

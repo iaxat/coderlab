@@ -5,6 +5,6 @@ class Solution:
         
 
 
-s = "     -42"
+s = "     -42.999qweqwe     99999fgdgdfg"
 sol = Solution()
 sol.myAtoi(s)
