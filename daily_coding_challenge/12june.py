@@ -6,12 +6,13 @@ from numpy.core.defchararray import multiply
 class Solution():
     def mult_find(self,arr_):
         self.arr_ = arr_
-        results = []
+        results0 = []
         for i in range(len(arr_)):
             sub_arr = np.delete(arr_,i)
             re = np.prod(sub_arr)
             # print(re)
-            # results.append(re)
+            results0.append(re)
+        print(results0)
 
     def mult_nonp(self,arr_):
         results = []
@@ -31,4 +32,5 @@ class Solution():
 
 arr_ = [1, 2, 3, 4, 5]
 sol = Solution()
+sol.mult_find(arr_)
 sol.mult_nonp(arr_)
