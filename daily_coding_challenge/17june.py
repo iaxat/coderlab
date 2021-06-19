@@ -28,7 +28,6 @@ class Solution():
                     else:
                         counter = 0
 
-                
                     # # case 2 - check i and i+1
                     if i+1<len_arr_s and :
                         stacks_i1.append(self.dict_alpha[arr_s[i]])
