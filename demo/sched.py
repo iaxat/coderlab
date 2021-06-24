@@ -1,4 +1,6 @@
 # shced scheduler
 
-def sched_schedule():
-    
+s = 'string'
+s = 'abc'
+
+print(s.rstrip('c'))
