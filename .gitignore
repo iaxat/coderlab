@@ -195,3 +195,6 @@ sphinx_*/
 
 # Local History for Visual Studio Code
 .history/
+
+.fake
+.ionide
