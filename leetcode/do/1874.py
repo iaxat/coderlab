@@ -16,9 +16,14 @@ class Solution:
 
         # method 2 - recursion
         results = 0
-        if len(nums1) == 0:
+        if len(nums1) < 1 and results:
             return results
-        
+        else:
+            results += max(nums1)*min(nums2)
+            print(results, max(nums1), min(nums2))
+            nums1.pop(nums1.index(max(nums1)))
+            nums2.pop(nums2.index(min(nums2)))
+            self.minProductSum(nums1,nums2)
 
 
 
