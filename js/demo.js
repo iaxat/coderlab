@@ -1,20 +1,47 @@
-// fetch API face detection
-// using https://rapidapi.com/inferdo/api/face-detection6/
+// Get the 'deepai' package here (Compatible with browser & nodejs):
+//     https://www.npmjs.com/package/deepai
+// All examples use JS async-await syntax, be sure to call the API inside an async function.
+//     Learn more about async-await here: https://javascript.info/async-await
+
+// Example posting a image URL:
+
+const deepai = require('deepai'); // OR include deepai.min.js as a script tag in your HTML
+
+deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
+
+(async function() {
+    var resp = await deepai.callStandardApi("facial-recognition", {
+            image: "https://1.bp.blogspot.com/-jCxX62XeFwY/XQpnctlnDEI/AAAAAAAABmc/vtvcFxfSaNAoS8_6NE-KrKzPWAHNjWhpgCEwYBhgL/s1600/Actress-Katrina-Kaif-Hot-High-Resolution-Mobile-Wallpapers-HD-029.jpg",
+    });
+    console.log(resp);
+	return resp
+})()
 
 
-fetch("https://microsoft-face1.p.rapidapi.com/detect?returnFaceId=true&recognitionModel=recognition_01&detectionModel=detection_01&returnFaceAttributes=age", {
-	"method": "POST",
-	"headers": {
-		"content-type": "application/json",
-		"x-rapidapi-host": "microsoft-face1.p.rapidapi.com"
-	},
-	"body": {
-		"url": "http://www.hdwallpaperspulse.com/wp-content/uploads/2017/10/26/island-natural-wallpaper.jpg"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+// // Example posting file picker input image (Browser only):
+
+// const deepai = require('deepai'); // OR include deepai.min.js as a script tag in your HTML
+
+// deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
+
+// (async function() {
+//     var resp = await deepai.callStandardApi("facial-recognition", {
+//             image: document.getElementById('yourFileInputId'),
+//     });
+//     console.log(resp);
+// })()
+
+
+// // Example posting a local image file (Node.js only):
+// const fs = require('fs');
+
+// const deepai = require('deepai'); // OR include deepai.min.js as a script tag in your HTML
+
+// deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
+
+// (async function() {
+//     var resp = await deepai.callStandardApi("facial-recognition", {
+//             image: fs.createReadStream("/path/to/your/file.jpg"),
+//     });
+//     console.log(resp);
+// })()
