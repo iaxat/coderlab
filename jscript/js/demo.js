@@ -11,9 +11,11 @@ deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
 
 (async function() {
     var resp = await deepai.callStandardApi("facial-recognition", {
-            image: "https://1.bp.blogspot.com/-jCxX62XeFwY/XQpnctlnDEI/AAAAAAAABmc/vtvcFxfSaNAoS8_6NE-KrKzPWAHNjWhpgCEwYBhgL/s1600/Actress-Katrina-Kaif-Hot-High-Resolution-Mobile-Wallpapers-HD-029.jpg",
+            image: "https://nkcf.org/wp-content/uploads/2017/11/people-880x480.jpg",
     });
     console.log(resp);
+	jsonArrData = JSON.stringify(resp)
+	console.log(jsonArrData)
 	return resp
 })()
 
