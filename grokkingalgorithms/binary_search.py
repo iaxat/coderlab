@@ -1,7 +1,6 @@
 # Grokking Algo Book
 # Chapter 1
 
-
 class Solution:
     def binary_search(self, whatsapp_uni, target):
         low = 0
