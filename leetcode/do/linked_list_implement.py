@@ -19,4 +19,12 @@ list5 = Node('Friday')
 list6 = Node('Saturday')
 
 # linking the node
+list1.head.next = list2
+list2.next = list3
+list3.next = list4
+list4.next = list5
+list5.next = list6
+print()
 
+# insert a new node in between list 1 and 2
+# create new node
