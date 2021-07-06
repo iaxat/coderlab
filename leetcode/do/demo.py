@@ -1,4 +1,4 @@
-# Linked List implementation
+# # Linked List implementation
 
 class Node():
     def __init__(self,data):
@@ -28,3 +28,15 @@ print()
 
 # insert a new node in between list 1 and 2
 # create new node
+list_middle = Node('middle man')
+
+list1.head.next = list_middle
+list_middle.next = list2
+
+
+# while list.next != None:
+
+print(list1.head.next.val)
+
+# ##############################
+
