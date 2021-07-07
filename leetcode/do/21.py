@@ -14,6 +14,9 @@ class Solution:
         if l2 == None:
             return l1
 
+        print(l1.val)
+        # prehead = ListNode(l1)
+        # print(prehead.val)
         
 
 
