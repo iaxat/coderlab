@@ -1,3 +1,4 @@
+
 # Definition for singly-linked list.
 
 class ListNode:
@@ -13,11 +14,12 @@ class Solution:
             return l2
         if l2 == None:
             return l1
-
-        print(l1.val)
-        # prehead = ListNode(l1)
-        # print(prehead.val)
         
+        while l1 and l2:
+            
+
+        # prehead = ListNode(l1)
+        # print(prehead.val.val)
 
 
 
