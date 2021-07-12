@@ -1,8 +1,8 @@
 # # Linked List implementation
 
-class Node():
-    def __init__(self,data):
-        self.next = None
+class ListNode():
+    def __init__(self,data,next=None):
+        self.next = next
         self.val = data
 
 class Linked_list():
@@ -10,12 +10,12 @@ class Linked_list():
         self.head = None
 
 list1 = Linked_list()
-list1.head = Node('Monday')
-list2 = Node('Tuesday')
-list3 = Node('Wednesday')
-list4 = Node('Thursday')
-list5 = Node('Friday')
-list6 = Node('Saturday')
+list1.head = ListNode('Monday')
+list2 = ListNode('Tuesday')
+list3 = ListNode('Wednesday')
+list4 = ListNode('Thursday')
+list5 = ListNode('Friday')
+list6 = ListNode('Saturday')
 
 # linking the node
 list1.head.next = list2
@@ -26,7 +26,7 @@ list5.next = list6
 
 # insert a new node in between list 1 and 2
 # create new node
-list_middle = Node('middle man')
+list_middle = ListNode('middle man')
 
 list1.head.next = list_middle
 list_middle.next = list2
@@ -35,4 +35,4 @@ list_middle.next = list2
 
 print(list1.head.next.val)
 # ##############################
-prehead = 
+# prehead = 
