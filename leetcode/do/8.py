@@ -1,11 +1,11 @@
 # Medium
 
-class Solution:
+class Solution():
     def myAtoi(self, s: str) -> int:
         results = 0
         s = ''.join(s.split())
         print(s)
-        if s[0].
+        if s[0].isalpha():
             print('yes')
 
 
