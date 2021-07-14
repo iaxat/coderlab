@@ -6,7 +6,9 @@ class Solution():
         s = ''.join(s.split())
         print(s)
         if s[0].isalpha():
-            print('yes')
+            return results
+        for i in range(0,len(s)):
+            
 
 
 s = "      -2322 42asdasd    asdasda   -12312"
