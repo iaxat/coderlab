@@ -9,35 +9,21 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        
-        
-        
-        
-        
-        # prehead = ListNode(-1)
-        # val_count = ListNode(0)
-        # prev = prehead
-        # if l1 is None:
-        #     return l2
-        # if l2 is None:
-        #     return l1
-        # while l1 and l2:
-        #     # count_extra = 0
-        #     val_count.val = l1.val + l2.val
-        #     prev.next = val_count
-        #     l1 = l1.next
-        #     l2 = l2.next
-        #     prev = prev.next
+        a = []
+        b = []
+        while l1 and l2:
+            a.append(l1.val)
+            l1 = l1.next
 
-        # prev.next = l1 if l1 is not None else l2
+            b.append(l2.val)
+            l2 = l2.next
+        
+        
 
-        # while prehead.next is not None:
-        #     prehead = prehead.next
-        #     print(prehead.val)
-        # return prehead.next
+        print(a, ' ', b)
+    
 
-
-l1 = [2,4,3]
+l1 = [2,4,3,5]
 l2 = [5,6,4]
 
 def create_linkedList(data):
