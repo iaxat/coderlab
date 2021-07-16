@@ -17,13 +17,25 @@ class Solution:
         while l2:
             b.append(l2.val)
             l2 = l2.next
-
         
+        stack = []
+        for i in a:
+            stack.push(str(i))
+
+        a = ''.join(stack)
+        a = int(a)
+
+        stack = []
+        for i in b:
+            stack.append(str(i))
+        b = ''.join(stack)
+        b = int(b)
+
 
         print(a, ' ', b)
     
 
-l1 = [2,4,3,5]
+l1 = [2,4,3]
 l2 = [5,6,4]
 
 def create_linkedList(data):
