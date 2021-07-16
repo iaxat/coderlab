@@ -11,13 +11,13 @@ class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         a = []
         b = []
-        while l1 and l2:
+        while l1:
             a.append(l1.val)
             l1 = l1.next
-
+        while l2:
             b.append(l2.val)
             l2 = l2.next
-        
+
         
 
         print(a, ' ', b)
