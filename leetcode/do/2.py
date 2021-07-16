@@ -9,9 +9,6 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        a = ''.join(l1)
-        b = ''.join(l2)
-        result = a+b
         
         
         
@@ -53,4 +50,4 @@ def create_linkedList(data):
     return list_head.next
 
 sol = Solution()
-sol.addTwoNumbers(l1, l2)
+sol.addTwoNumbers(create_linkedList(l1), create_linkedList(l2))
