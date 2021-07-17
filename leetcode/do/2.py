@@ -53,7 +53,10 @@ class Solution:
 
 
         # method 2
-        # 
+        # using carry over
+        prehead_return = ListNode()
+        while l1 and l2:
+            
 
     
 
