@@ -49,13 +49,14 @@ class Solution:
             prev.next=a
             prev = prev.next
 
-        return list_head.next
+        # return list_head.next
 
 
         # method 2
         # using carry over
         prehead_return = ListNode()
         while l1 and l2:
+            print('')
             
 
     
