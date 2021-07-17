@@ -9,8 +9,12 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        
+        # method 1 
         a = []
         b = []
+        sum = 0
+
         while l1:
             a.append(l1.val)
             l1 = l1.next
@@ -20,19 +24,37 @@ class Solution:
         
         stack = []
         for i in a:
-            stack.push(str(i))
-
+            stack.append(str(i))
+        stack = stack[::-1]
         a = ''.join(stack)
         a = int(a)
 
         stack = []
         for i in b:
             stack.append(str(i))
+        stack = stack[::-1]
         b = ''.join(stack)
         b = int(b)
 
+        sum = a + b
+        sum = str(sum)
+        sum = sum[::-1]
 
-        print(a, ' ', b)
+        result = [int(i) for i in sum]
+
+        list_head = ListNode()
+        prev = list_head
+        for i in result:
+            a = ListNode(i)
+            prev.next=a
+            prev = prev.next
+
+        return list_head.next
+
+
+        # method 2
+        # 
+
     
 
 l1 = [2,4,3]
@@ -48,4 +70,4 @@ def create_linkedList(data):
     return list_head.next
 
 sol = Solution()
-sol.addTwoNumbers(create_linkedList(l1), create_linkedList(l2))
+print(sol.addTwoNumbers(create_linkedList(l1), create_linkedList(l2)))
