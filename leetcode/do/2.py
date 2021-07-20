@@ -50,13 +50,15 @@ class Solution:
             prev = prev.next
 
         # return list_head.next
-
+        
 
         # method 2
         # using carry over
         prehead_return = ListNode()
         while l1 and l2:
-            print('')
+            temp_sum = ListNode()
+            carry_over = ListNode()
+            
             
 
     
