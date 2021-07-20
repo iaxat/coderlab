@@ -25,7 +25,7 @@ class Create():
         for edge in self.data:
             print(edge[0])
             if edge[0] not in graph_dict.keys():
-                graph_dict[edge[0]] = None
+                graph_dict[edge[0]] = []
             else:
                 graph_dict[edge[0]] = edge[1]
         return graph_dict
