@@ -1,5 +1,8 @@
 # [a,b],[b,c],[c,d]
 
+from typing import get_args
+
+
 class Create():
     def __init__(self, data) -> None:
         self.data = data
@@ -19,22 +22,30 @@ class Create():
 
     def create_graph_undirected(self) -> dict:
         graph_dict = {}
-        for i in range(0,len(self.data)):
-            a = 0
-            key_dict = self.data[i][a]
-            for j in range(0,len(self.data[i])):
-                values_data = self.data[i][j]
-                if key_dict not in graph_dict.keys() and key_dict != values_data:
-                    graph_dict[key_dict] = [values_data]
-                elif key_dict in graph_dict.keys() and key_dict != values_data:
-                    graph_dict[key_dict].append(values_data)
-            a += 1
+        for edge in self.data:
+            print(edge[0])
+            if edge[0] not in graph_dict.keys():
+                graph_dict[edge[0]] = None
+            else:
+                graph_dict[edge[0]] = edge[1]
+        return graph_dict
+
+        # for i in range(0,len(self.data)):
+        #     a = 0
+        #     key_dict = self.data[i][a]
+        #     for j in range(0,len(self.data[i])):
+        #         values_data = self.data[i][j]
+        #         if key_dict not in graph_dict.keys() and key_dict != values_data:
+        #             graph_dict[key_dict] = [values_data]
+        #         elif key_dict in graph_dict.keys() and key_dict != values_data:
+        #             graph_dict[key_dict].append(values_data)
+        #     a += 1
 
         return graph_dict
 
 
 data = [['a','b'],['a','c'],['c','d']]
 sol = Create(data)
-print(sol.create_graph_directed())
+# print(sol.create_graph_directed())
 print(sol.create_graph_undirected())
 # {a=[b, c], b=[a], c=[a, d], d=[c]}
