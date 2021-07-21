@@ -25,14 +25,13 @@ class Create():
 
         # 1 for loop
         graph_dict = {}
-        graph_dict = {}
         for edge in self.data:
             if edge[0] not in graph_dict.keys():
                 graph_dict[edge[0]] = [edge[1]]
             else:
                 graph_dict[edge[0]].append(edge[1])
-            if edge[1] not in graph_dict.keys():
-                graph_dict[edge[1]] = []
+            # if edge[1] not in graph_dict.keys():
+            #     graph_dict[edge[1]] = []
 
         return graph_dict
 
@@ -71,8 +70,8 @@ class Create():
 data = [['a','b'],['a','c'],['c','d']]
 sol = Create(data)
 print(sol.create_graph_directed())
-print(sol.create_graph_undirected())
-sol.dfs_graph_directed()
+# print(sol.create_graph_undirected())
+# sol.dfs_graph_directed()
 # {a=[b, c], b=[a], c=[a, d], d=[c]}
 
 # detect cycle in graph
