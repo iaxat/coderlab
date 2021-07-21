@@ -55,9 +55,14 @@ class Solution:
         # method 2
         # using carry over
         prehead_return = ListNode()
+        if l1 is None:
+            return l2
+        if l2 is None:
+            return l1
+            
         while l1 and l2:
             temp_sum = ListNode()
-            carry_over = ListNode()
+            carry_over = '1'
             
             
 
