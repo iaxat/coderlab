@@ -28,11 +28,15 @@ class Google_duplicate():
 
     
     # method 3
-    def method_3(self):
+    def method_3(self, data):
         
+
+
+
 
 
 data = [6, 1, 3, 3, 3, 6, 6]
 sol = Google_duplicate(data)
 sol.unique_find()
 sol.method_2()
+sol.method_3(data)
