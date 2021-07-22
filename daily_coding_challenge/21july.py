@@ -5,16 +5,7 @@ class Route_Finder():
         self.path = path
         self.start_point = start_point
 
-    # def final_route(self):
-    #     result = []
-    #     path_dict = {}
-    #     for edge in self.path:
-    #         if edge[0] not in path_dict.keys():
-    #             path_dict[edge[0]] = [edge[1]]
-    #         else:
-    #             path_dict[edge[0]].append(edge[1])
-    #     print(path_dict)
-
+            
 
 
 
