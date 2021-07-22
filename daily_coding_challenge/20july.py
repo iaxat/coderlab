@@ -26,11 +26,6 @@ class Google_duplicate():
                 print(i)
                 return i
 
-    
-    # method 3
-    def method_3(self, data):
-        
-
 
 
 
