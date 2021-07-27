@@ -9,6 +9,8 @@ class Solution():
     def find_sol(self):
         
 
+        
+
 
 rand5 = 5
 rand7 = 7
