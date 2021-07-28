@@ -15,7 +15,7 @@ def find():
 
 def find_method2():
     data = [2,4,1,3,5]
-    stacks = []
+    
 
 
 
