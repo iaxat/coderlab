@@ -9,11 +9,6 @@ def search_profit():
     print(max(result))
 
 
-def search_method2():
-    data = [9,11,8,5,7,10]
-    
-
-
 
 search_profit()
-search_method2()
+
