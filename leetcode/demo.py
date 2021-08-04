@@ -12,11 +12,20 @@ def change_rotation(arr, d, n):
 
     print(arr)
 
-def rotation_method2(arr, d, n):
+
+def leftRotatebyOne(arr, n):
+    temp = arr[0]
+    for i in range(n-1):
+        arr[i] = arr[i + 1]
+    arr[n-1] = temp
+
+
+def leftRotate(arr, d, n):
     for i in range(d):
+        leftRotate(arr, n)
         
 
 
 
 change_rotation(arr, d, n)
-rotation_method2(arr, d, n)
+leftRotate(arr, d, n)
