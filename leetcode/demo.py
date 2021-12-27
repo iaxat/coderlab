@@ -1,31 +1,21 @@
 # 
-arr = [1,2,3,4,5,6,7,8,9]
+arr1 = [1,2,3]
+arr2 = [4,5,6]
 
-# array rotation
-d = 2
-n = 7
-# method 1
-def change_rotation(arr, d, n):
-    for i in range(d):
-        temp_data = arr.pop(0)
-        arr.append(temp_data)
+arr = [*arr1, *arr2]
 
-    print(arr)
+print(arr)
 
 
-def leftRotatebyOne(arr, n):
-    temp = arr[0]
-    for i in range(n-1):
-        arr[i] = arr[i + 1]
-    arr[n-1] = temp
+arr_total = []
+arr_total.append(arr1)
+arr_total.append(arr2)
 
+print(arr_total)
 
-def leftRotate(arr, d, n):
-    for i in range(d):
-        leftRotate(arr, n)
-        
+allDays = []
+allDays.append(arr1[:])
+allDays.append(arr2[:])
+print(allDays)
 
-
-
-change_rotation(arr, d, n)
-leftRotate(arr, d, n)
+print(arr1[:])
