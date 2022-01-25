@@ -1,21 +1,13 @@
-# 
-arr1 = [1,2,3]
-arr2 = [4,5,6]
-
-arr = [*arr1, *arr2]
-
-print(arr)
+import unittest
 
 
-arr_total = []
-arr_total.append(arr1)
-arr_total.append(arr2)
+class TestSum(unittest.TestCase):
 
-print(arr_total)
+    def test_sum(self):
+        self.assertEqual(sum([1, 2, 3]), 6, "Should be 6")
 
-allDays = []
-allDays.append(arr1[:])
-allDays.append(arr2[:])
-print(allDays)
+    def test_sum_tuple(self):
+        self.assertEqual(sum((1, 2, 2)), 6, "Should be 6")
 
-print(arr1[:])
+if __name__ == '__main__':
+    unittest.main()
