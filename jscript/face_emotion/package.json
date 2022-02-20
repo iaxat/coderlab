@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "axios": "^0.21.2",
-    "deepai": "^1.0.17",
-    "node-fetch": "^2.6.1"
-  }
-}
